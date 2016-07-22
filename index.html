@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Brexit Bitmaps</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="vendor/rgbcolor.js"></script>
+    <script src="vendor/StackBlur.js"></script>
+    <script src="vendor/canvg.js"></script>
+    <link rel="stylesheet" href="https://h2.ft.com/build/v2/bundles/css?modules=o-footer@^4,o-fonts@^2">
+    <style>
+    
+    .container{
+        border-bottom: solid 1px black;
+    }
+    
+    .container p{
+        font-size: 10px
+    }
+    
+    .note{
+        color:#aaa;
+        font-size: 12px;
+        font-style: oblique;
+    }
+    
+    .date-range-option{
+        padding-right: 10px;
+    }
+    
+    .description, .instruction{
+        font-size: 14px;
+    }
+    
+</style>
+
+	
+</head>
+<body>
+<article>
+    <h1>Brexit graphics</h1>
+    <p>If you're writing a story about Brexit polls and want to include some graphics to illustrate it you've come to the right place.</p>
+    <p>If you don't see what you need here (either in terms of data, graphics or labeling) or want to suggest some changes please get in touch with Tom Pearson, Steve Bernard or Alan Smith.</p>
+	   <p>
+           <a href="#individual-polls">Individual polls</a>
+           <a href="#poll-of-polls">&quot;Poll Of polls&quot;</a>
+           <a href="#polls-over-time">Polls over time</a>
+       </p>
+    <section id="individual-polls" class="individual">
+    <h2>Individual poll graphic</h2>
+    <p class="description">These are charts are of use when discussing a particular opinion poll</p>
+    <p class="instruction">Select a particular poll from this drop down <select name="polls" id="polls-dropdown"></select></p>
+    <div class="poll-chart">
+    </div>
+    </section>
+    
+    <section id="poll-of-polls" class="average">
+    <h2>Poll of polls</h2>
+    <p class="description">These charts are of use when discussing, in general, the most recent polls. Because they take into account the seven most recent polls they are less prone to the uncertainty inherent in individual polls.</p>
+
+    <div class="poll-chart">
+    </div>
+    </section>
+    
+    <section id="polls-over-time" class="time-series">
+    <h2>Polls over time</h2>
+    <p class="description">These charts are useful when discussing trends in polling over a particular period of time (probably not less a than a month and not more than a year or two); make sure you choose a width appropriate to the time span you're showing nothing over a year or so should be shown in the small format.</p>
+    <p class="instruction">The links below are some suggested time spans, scroll down to the bottom of the page for more fine grained control.</p>
+    <div id="default-time-inputs"></div>
+    <div class="poll-chart"></div>
+    <div class="calendar-input">
+        <p>
+            From <input type="date" name="start">
+        </p> 
+        <p>
+            To <input type="date" name="end">
+        </p>
+    </div>
+	</section>
+  </article>
+  <!-- TEST --> 
+  <hr>
+  <p><a href="http://help.ft.com/tools-services/copyright-policy/">copyright</a></p>
+  
+<svg width="600" height="80">
+<text y="20" font-family="MetricWeb,sans-serif">1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,;:-*</text>
+<text y="40" font-family="MetricWeb,sans-serif" font-weight="800">1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,;:-*</text>
+<text y="60" font-family="MetricWeb,sans-serif" font-weight="100">1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,;:-*</text>
+</svg>
+
+<!-- end test -->
+</body>
+<script type="text/javascript" src="bundle.js"></script>
+</html>
